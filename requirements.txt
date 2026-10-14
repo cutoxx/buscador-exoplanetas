@@ -1,0 +1,11 @@
+# Versiones con que se desarrolló y validó el proyecto.
+lightkurve==2.6.0
+astropy==8.0.1
+astroquery==0.4.11
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+pandas==2.3.3
+joblib==1.6.0
+# Fijo: el modelo ml/clasificador_toi.joblib se entrenó con esta versión.
+scikit-learn==1.9.1

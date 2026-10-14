@@ -1,0 +1,22 @@
+# Entorno virtual y caché de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Datos descargados de la NASA (se vuelven a bajar solos)
+mastDownload/
+*.fits
+
+# Resultados de corridas locales
+busqueda_*/
+nula_*/
+resultado*.png
+resultado*.json
+tic*.png
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini

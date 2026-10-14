@@ -1,0 +1,391 @@
+{
+  "completo": {
+    "n": 2541,
+    "variables": [
+      "log_periodo",
+      "log_duracion_h",
+      "log_profundidad_ppm",
+      "log_radio_tierras",
+      "radio_estrella",
+      "teff",
+      "logg",
+      "duracion_relativa"
+    ],
+    "cv_por_estrella": {
+      "roc_auc": 0.896,
+      "pr_auc": 0.891,
+      "brier": 0.127,
+      "exactitud_0p5": 0.826,
+      "n": 2541
+    },
+    "cv_ponderada": {
+      "roc_auc": 0.892,
+      "pr_auc": 0.883,
+      "brier": 0.129,
+      "exactitud_0p5": 0.821,
+      "n": 2541
+    },
+    "cv_sin_KP": {
+      "roc_auc": 0.894,
+      "pr_auc": 0.829,
+      "brier": 0.134,
+      "exactitud_0p5": 0.819,
+      "n": 1945
+    },
+    "temporal": {
+      "corte": "2021-08-06",
+      "roc_auc": 0.852,
+      "pr_auc": 0.91,
+      "brier": 0.161,
+      "exactitud_0p5": 0.776,
+      "n": 765
+    },
+    "sesgos": [
+      {
+        "variable": "magnitud TESS",
+        "rango": "(-5, 9]",
+        "n": 286,
+        "frac_planetas": 0.7,
+        "prob_media": 0.59,
+        "roc_auc": 0.913
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(9, 11]",
+        "n": 1033,
+        "frac_planetas": 0.49,
+        "prob_media": 0.48,
+        "roc_auc": 0.909
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(11, 13]",
+        "n": 876,
+        "frac_planetas": 0.58,
+        "prob_media": 0.59,
+        "roc_auc": 0.885
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(13, 25]",
+        "n": 346,
+        "frac_planetas": 0.53,
+        "prob_media": 0.56,
+        "roc_auc": 0.877
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(0, 2]",
+        "n": 594,
+        "frac_planetas": 0.31,
+        "prob_media": 0.31,
+        "roc_auc": 0.926
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(2, 5]",
+        "n": 973,
+        "frac_planetas": 0.62,
+        "prob_media": 0.61,
+        "roc_auc": 0.896
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(5, 10]",
+        "n": 459,
+        "frac_planetas": 0.6,
+        "prob_media": 0.58,
+        "roc_auc": 0.865
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(10, 1000]",
+        "n": 478,
+        "frac_planetas": 0.65,
+        "prob_media": 0.64,
+        "roc_auc": 0.84
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(0, 4]",
+        "n": 757,
+        "frac_planetas": 0.72,
+        "prob_media": 0.72,
+        "roc_auc": 0.86
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(4, 8]",
+        "n": 412,
+        "frac_planetas": 0.32,
+        "prob_media": 0.32,
+        "roc_auc": 0.913
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(8, 15]",
+        "n": 926,
+        "frac_planetas": 0.58,
+        "prob_media": 0.57,
+        "roc_auc": 0.872
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(15, 1000]",
+        "n": 445,
+        "frac_planetas": 0.41,
+        "prob_media": 0.39,
+        "roc_auc": 0.888
+      },
+      {
+        "variable": "pipeline (0-1 SPOC, 1-2 QLP)",
+        "rango": "(0, 1]",
+        "n": 1140,
+        "frac_planetas": 0.72,
+        "prob_media": 0.66,
+        "roc_auc": 0.885
+      },
+      {
+        "variable": "pipeline (0-1 SPOC, 1-2 QLP)",
+        "rango": "(1, 2]",
+        "n": 1401,
+        "frac_planetas": 0.41,
+        "prob_media": 0.44,
+        "roc_auc": 0.89
+      }
+    ],
+    "calibracion": [
+      {
+        "prob_dicha": "0.0-0.2",
+        "n": 719,
+        "prob_real": 0.06
+      },
+      {
+        "prob_dicha": "0.2-0.4",
+        "n": 130,
+        "prob_real": 0.27
+      },
+      {
+        "prob_dicha": "0.4-0.6",
+        "n": 275,
+        "prob_real": 0.48
+      },
+      {
+        "prob_dicha": "0.6-0.8",
+        "n": 432,
+        "prob_real": 0.7
+      },
+      {
+        "prob_dicha": "0.8-1.0",
+        "n": 990,
+        "prob_real": 0.89
+      }
+    ],
+    "importancia": {
+      "log_radio_tierras": 0.087,
+      "log_periodo": 0.069,
+      "duracion_relativa": 0.066,
+      "teff": 0.057,
+      "log_profundidad_ppm": 0.045,
+      "logg": 0.013,
+      "log_duracion_h": 0.012,
+      "radio_estrella": -0.002
+    }
+  },
+  "basico": {
+    "n": 2831,
+    "variables": [
+      "log_periodo",
+      "log_duracion_h",
+      "log_profundidad_ppm"
+    ],
+    "cv_por_estrella": {
+      "roc_auc": 0.745,
+      "pr_auc": 0.706,
+      "brier": 0.206,
+      "exactitud_0p5": 0.671,
+      "n": 2831
+    },
+    "cv_ponderada": {
+      "roc_auc": 0.739,
+      "pr_auc": 0.692,
+      "brier": 0.209,
+      "exactitud_0p5": 0.663,
+      "n": 2831
+    },
+    "cv_sin_KP": {
+      "roc_auc": 0.734,
+      "pr_auc": 0.567,
+      "brier": 0.212,
+      "exactitud_0p5": 0.655,
+      "n": 2226
+    },
+    "temporal": {
+      "corte": "2021-07-12",
+      "roc_auc": 0.704,
+      "pr_auc": 0.772,
+      "brier": 0.237,
+      "exactitud_0p5": 0.632,
+      "n": 861
+    },
+    "sesgos": [
+      {
+        "variable": "magnitud TESS",
+        "rango": "(-5, 9]",
+        "n": 326,
+        "frac_planetas": 0.62,
+        "prob_media": 0.56,
+        "roc_auc": 0.76
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(9, 11]",
+        "n": 1170,
+        "frac_planetas": 0.43,
+        "prob_media": 0.46,
+        "roc_auc": 0.751
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(11, 13]",
+        "n": 953,
+        "frac_planetas": 0.54,
+        "prob_media": 0.5,
+        "roc_auc": 0.716
+      },
+      {
+        "variable": "magnitud TESS",
+        "rango": "(13, 25]",
+        "n": 382,
+        "frac_planetas": 0.5,
+        "prob_media": 0.51,
+        "roc_auc": 0.763
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(0, 2]",
+        "n": 686,
+        "frac_planetas": 0.28,
+        "prob_media": 0.28,
+        "roc_auc": 0.782
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(2, 5]",
+        "n": 1090,
+        "frac_planetas": 0.57,
+        "prob_media": 0.55,
+        "roc_auc": 0.744
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(5, 10]",
+        "n": 508,
+        "frac_planetas": 0.55,
+        "prob_media": 0.56,
+        "roc_auc": 0.606
+      },
+      {
+        "variable": "período (d)",
+        "rango": "(10, 1000]",
+        "n": 510,
+        "frac_planetas": 0.61,
+        "prob_media": 0.61,
+        "roc_auc": 0.651
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(0, 4]",
+        "n": 772,
+        "frac_planetas": 0.7,
+        "prob_media": 0.54,
+        "roc_auc": 0.734
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(4, 8]",
+        "n": 440,
+        "frac_planetas": 0.3,
+        "prob_media": 0.38,
+        "roc_auc": 0.727
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(8, 15]",
+        "n": 979,
+        "frac_planetas": 0.56,
+        "prob_media": 0.53,
+        "roc_auc": 0.736
+      },
+      {
+        "variable": "radio (R⊕)",
+        "rango": "(15, 1000]",
+        "n": 499,
+        "frac_planetas": 0.36,
+        "prob_media": 0.49,
+        "roc_auc": 0.739
+      },
+      {
+        "variable": "pipeline (0-1 SPOC, 1-2 QLP)",
+        "rango": "(0, 1]",
+        "n": 1197,
+        "frac_planetas": 0.7,
+        "prob_media": 0.55,
+        "roc_auc": 0.733
+      },
+      {
+        "variable": "pipeline (0-1 SPOC, 1-2 QLP)",
+        "rango": "(1, 2]",
+        "n": 1634,
+        "frac_planetas": 0.35,
+        "prob_media": 0.45,
+        "roc_auc": 0.747
+      }
+    ],
+    "calibracion": [
+      {
+        "prob_dicha": "0.0-0.2",
+        "n": 412,
+        "prob_real": 0.06
+      },
+      {
+        "prob_dicha": "0.2-0.4",
+        "n": 425,
+        "prob_real": 0.33
+      },
+      {
+        "prob_dicha": "0.4-0.6",
+        "n": 869,
+        "prob_real": 0.52
+      },
+      {
+        "prob_dicha": "0.6-0.8",
+        "n": 1079,
+        "prob_real": 0.7
+      },
+      {
+        "prob_dicha": "0.8-1.0",
+        "n": 46,
+        "prob_real": 0.87
+      }
+    ],
+    "importancia": {
+      "log_periodo": 0.157,
+      "log_profundidad_ppm": 0.145,
+      "log_duracion_h": 0.064
+    }
+  },
+  "pc_sin_veredicto": {
+    "n": 4820,
+    "mediana": 0.68,
+    "frac_mayor_0p8": 0.33,
+    "frac_menor_0p2": 0.14
+  },
+  "catalogo": "datos/toi_exofop.csv",
+  "excluidas": [
+    261136679,
+    259377017,
+    100100827,
+    199574208
+  ]
+}
